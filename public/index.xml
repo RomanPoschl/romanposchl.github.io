@@ -2,45 +2,45 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Home on My New Hugo Site</title>
-    <link>http://localhost:1313/</link>
+    <link>https://example.org/</link>
     <description>Recent content in Home on My New Hugo Site</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 04 Jul 2025 19:55:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://example.org/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>My First Post: A Deep Dive into Hugo and Tailwind</title>
-      <link>http://localhost:1313/posts/post-test4/</link>
+      <link>https://example.org/posts/post-test4/</link>
       <pubDate>Fri, 04 Jul 2025 19:55:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/post-test4/</guid>
+      <guid>https://example.org/posts/post-test4/</guid>
       <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;&#xA;&lt;p&gt;This is the beginning of my journey. Building a blog from scratch feels incredibly empowering. Instead of grabbing a pre-made theme, I decided to build one myself using &lt;strong&gt;Hugo&lt;/strong&gt; and &lt;strong&gt;Tailwind CSS&lt;/strong&gt;.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Post Test3</title>
-      <link>http://localhost:1313/posts/post-test3/</link>
+      <link>https://example.org/posts/post-test3/</link>
       <pubDate>Wed, 02 Jul 2025 22:44:40 +0200</pubDate>
-      <guid>http://localhost:1313/posts/post-test3/</guid>
+      <guid>https://example.org/posts/post-test3/</guid>
       <description></description>
     </item>
     <item>
       <title>Post Test2</title>
-      <link>http://localhost:1313/posts/post-test2/</link>
+      <link>https://example.org/posts/post-test2/</link>
       <pubDate>Wed, 02 Jul 2025 22:44:37 +0200</pubDate>
-      <guid>http://localhost:1313/posts/post-test2/</guid>
+      <guid>https://example.org/posts/post-test2/</guid>
       <description></description>
     </item>
     <item>
       <title>Post Test1</title>
-      <link>http://localhost:1313/posts/post-test1/</link>
+      <link>https://example.org/posts/post-test1/</link>
       <pubDate>Wed, 02 Jul 2025 22:44:33 +0200</pubDate>
-      <guid>http://localhost:1313/posts/post-test1/</guid>
+      <guid>https://example.org/posts/post-test1/</guid>
       <description></description>
     </item>
     <item>
       <title>About Me</title>
-      <link>http://localhost:1313/pages/about-me/</link>
+      <link>https://example.org/pages/about-me/</link>
       <pubDate>Wed, 02 Jul 2025 20:04:30 +0200</pubDate>
-      <guid>http://localhost:1313/pages/about-me/</guid>
+      <guid>https://example.org/pages/about-me/</guid>
       <description></description>
     </item>
   </channel>

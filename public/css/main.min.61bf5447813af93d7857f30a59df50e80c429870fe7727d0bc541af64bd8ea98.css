@@ -1,0 +1,12 @@
+@import 'https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap';@import "tailwindcss";@source "hugo_stats.json";@theme{--font-sans: "Roboto", ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji","Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
+  --color-muave: rgb(203, 166, 247);
+
+  --color-text: rgb(205, 214, 244);
+  --color-subtext0: rgb(166, 173, 200);
+  
+  --color-surface0: rgb(49, 50, 68);
+  --color-base: rgb(30, 30, 46);
+  --color-mantle: rgb(24, 24, 37);
+  --color-crust: rgb(17, 17, 27);
+}

@@ -34,8 +34,8 @@
   "frontMatter.preview.host": "http://localhost:1313",
   "frontMatter.content.pageFolders": [
     {
-      "title": "content",
-      "path": "[[workspace]]/content"
+      "title": "posts",
+      "path": "[[workspace]]/content/posts"
     },
     {
       "title": "pages",
@@ -44,10 +44,9 @@
     {
       "title": "archetypes",
       "path": "[[workspace]]/themes/my-theme/archetypes"
-    },
-    {
-      "title": "posts",
-      "path": "[[workspace]]/content/posts"
     }
-  ]
+  ],
+  "frontMatter.git.enabled": true,
+  "frontMatter.git.commitMessage": "Synced by Front Matter {{hour24}}:{{minute}}",
+  "frontMatter.framework.startCommand": "hugo server -D -d ./.dev"
 }
