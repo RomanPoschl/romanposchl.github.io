@@ -1,0 +1,18 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<title>{{ if .IsHome }}{{ site.Title }}{{ else }}{{ printf "%s | %s" .Title site.Title }}{{ end }}</title>
+{{ with (templates.Defer (dict "key" "global")) }}
+    {{ partial "head/css.html" . }}
+{{ end }}
+{{ partialCached "head/js.html" . }}
+
+{{/* SEO and Open Graph Tags */}}
+{{ $description := .Site.Params.description }}
+{{ if .IsPage }}{{ $description = .Summary }}{{ end }}
+<meta name="description" content="{{ $description }}">
+
+{{/* Open Graph for social previews */}}
+<meta property="og:title" content="{{ .Title }}">
+<meta property="og:description" content="{{ $description }}">
+<meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}">
+<meta property="og:url" content="{{ .Permalink }}">

@@ -1,0 +1,29 @@
+{{ define "main" }}
+    <article class="prose lg:prose-xl max-w-none">
+        {{/* Check for and process the featured image */}}
+        {{ with .Params.featured_image }}
+            {{ $image := resources.Get . }}
+            {{ if $image }}
+                {{ $processedImage := $image.Resize "800x" }}
+                <img src="{{ $processedImage.RelPermalink }}" width="{{ $processedImage.Width }}" height="{{ $processedImage.Height }}" alt="{{ $.Title }}" class="mb-8 rounded-lg">
+            {{ end }}
+        {{ end }}
+
+        <h1 class="text-4xl font-bold mb-2">{{ .Title }}</h1>
+
+        <div class="text-sm text-gray-500 mb-8">
+            <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "January 2, 2006" }}</time>
+        </div>
+
+        {{ .Content }}
+
+        <div class="mt-8 pt-4 border-t border-gray-200">
+            <h4 class="font-bold mb-2">Tagged In:</h4>
+            <div>
+                {{ range .Params.tags }}
+                    <a href="{{ "/tags/" | relURL }}{{ . | urlize }}" class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2 hover:bg-gray-300">#{{ . }}</a>
+                {{ end }}
+            </div>
+        </div>
+    </article>
+{{ end }}

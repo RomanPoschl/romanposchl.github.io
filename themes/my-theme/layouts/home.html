@@ -1,0 +1,35 @@
+{{ define "main" }}
+  <div class="space-y-4">
+  {{ .Content }}
+  {{ $pages := where site.RegularPages "Type" "posts" }}
+  {{ $paginator := .Paginate $pages }}
+  {{ range $paginator.Pages }}
+  <a class="group block" href="{{ .RelPermalink }}">
+    <div class="p-6 border border-surface0 rounded-lg group-hover:border-muave group-hover:bg-base transition-all duration-200 ease-in-out">
+      <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between">
+        <div class="flex items-center gap-4">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="text-muave h-8 w-8">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M5.25 8.25h15m-16.5 7.5h15m-1.8-13.5-3.9 19.5m-2.1-19.5-3.9 19.5" />
+          </svg>
+          <div>
+            <h2 class="flex flex-row items-center group-hover:text-muave transition-all duration-200 ease-in-out text-2xl font-bold font-headline">
+              {{ .LinkTitle }}
+            </h2>
+            <div class="flex items-center gap-2 text-sm text-subtext0 mt-1">
+              {{ .Date.Format "Jan 02, 2006 15:04"}}
+            </div>
+          </div>
+        </div>
+        <div class="flex items-center text-sm font-medium text-muave opacity-0 group-hover:opacity-100 transition-opacity duration-300 mt-4 sm:mt-0 self-start sm:self-center">
+          Read more
+        </div>
+      </div>
+      <div class="">
+      {{ .Summary }}
+      </div>
+    </div>
+  </a>
+  {{ end }}
+  {{ partial "pagination.html" . }}
+  </div>
+{{ end }}

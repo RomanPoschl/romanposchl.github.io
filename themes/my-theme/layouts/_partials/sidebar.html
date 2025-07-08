@@ -1,0 +1,18 @@
+<aside class="w-64 bg-white dark:bg-crust h-screen sticky top-0">
+    <div class="border-b-1 border-muave p-4">
+        <h1 class="text-lg font-bold hover:text-muave transition-all duration-200">
+            <a href="{{ .Site.BaseURL }}">
+                {{ .Site.Title }}
+            </a>
+        </h1>
+    </div>
+    {{ partial "menu.html" (dict "menuID" "main" "page" .) }}
+    <!-- <nav class="mt-8 p-4">
+        {{ range .Site.Menus.main }}
+        <a href="{{ .URL }}" class="flex items-center gap-3 px-4 py-2 rounded-lg text-subtext0 hover:text-muave hover:bg-surface0 transition-all duration-200
+                    {{ if $.IsMenuCurrent " main" . }}bg-surface0 text-text{{ end }}">
+            <span class="font-medium">{{ .Name }}</span>
+        </a>
+        {{ end }}
+    </nav> -->
+</aside>

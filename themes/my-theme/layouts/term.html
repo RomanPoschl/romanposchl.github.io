@@ -1,0 +1,23 @@
+{{ define "main" }}
+  <div class="mb-12">
+    <h1 class="text-4xl font-bold">
+        Posts Tagged with <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded">#{{ .Title }}</span>
+    </h1>
+  </div>
+
+  {{/* Loop through all the pages for this term */}}
+  {{ range .Pages }}
+    <div class="mb-8 pb-8 border-b border-gray-200">
+      <h2 class="text-2xl font-bold mb-2">
+        <a href="{{ .RelPermalink }}" class="text-gray-900 hover:text-blue-600">{{ .Title }}</a>
+      </h2>
+      <div class="text-sm text-gray-500 mb-4">
+        <time>{{ .Date.Format "January 2, 2006" }}</time>
+      </div>
+      <p class="text-gray-700">
+        {{ .Summary }}
+      </p>
+      <a href="{{ .RelPermalink }}" class="text-blue-500 hover:text-blue-700 font-semibold mt-4 inline-block">Read more →</a>
+    </div>
+  {{ end }}
+{{ end }}

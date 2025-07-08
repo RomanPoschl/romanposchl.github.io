@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="{{ site.Language.LanguageCode }}" dir="{{ or site.Language.LanguageDirection `ltr` }}" class="dark">
+<head>
+  {{ partial "head.html" . }}
+</head>
+
+<body class="bg-gray-100 font-sans dark:bg-base dark:text-gray-200">
+    <div class="flex">
+        {{ partial "sidebar.html" . }}
+        <main class="flex-grow">
+            {{ partial "header.html" . }}
+            <div class="container max-w-4xl mx-auto py-12 px-4 md:px-6 fade-in">
+              {{ block "main" . }}
+              {{ end }}
+            </div>
+        </main>
+    </div>
+</body>
+</html>
