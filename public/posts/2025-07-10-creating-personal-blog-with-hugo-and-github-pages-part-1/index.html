@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr" class="dark">
+<head>
+  
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-NB5RJJP5');</script>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<title>Creating a Personal Blog with Hugo and GitHub Pages: Part 1 | Roman Pöschl Blog</title>
+
+    
+
+  
+  
+    
+      
+        <link rel="stylesheet" href="/css/main.d0828a28e13dee811e7378ed9dcfa3693d751e48cc25ea7b468a9d03e8d6ca3e.css" integrity="sha256-0IKKKOE97oEec3jtnc&#43;jaT11HkjMJep7RoqdA&#43;jWyj4=" crossorigin="anonymous">
+      
+    
+  
+
+
+
+        <script src="/js/main.23cd0c7d837263b9eaeb96ee2d9ccfa2969daa3fa00fa1c1fe8701a9b87251a1.js" integrity="sha256-I80MfYNyY7nq65buLZzPopadqj&#43;gD6HB/ocBqbhyUaE=" crossorigin="anonymous"></script>
+
+
+
+
+
+<meta name="description" content="Recently, I started writing again, so I decided to look into creating a simple personal blog. While doing research, I found Hugo, a static site generator. It works simply: it takes a theme and your content (which consists of simple Markdown files) and generates static HTML pages for every post. A generated site like this, you can publish to various (mostly free) hostings. I decided I will try GitHub Pages first.">
+
+
+<meta property="og:title" content="Creating a Personal Blog with Hugo and GitHub Pages: Part 1">
+<meta property="og:description" content="Recently, I started writing again, so I decided to look into creating a simple personal blog. While doing research, I found Hugo, a static site generator. It works simply: it takes a theme and your content (which consists of simple Markdown files) and generates static HTML pages for every post. A generated site like this, you can publish to various (mostly free) hostings. I decided I will try GitHub Pages first.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://romanposchl.github.io/posts/2025-07-10-creating-personal-blog-with-hugo-and-github-pages-part-1/">
+</head>
+
+<body class="bg-gray-100 font-sans dark:bg-base dark:text-gray-200">
+
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NB5RJJP5"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+    <div class="flex">
+        <aside class="w-64 bg-white dark:bg-crust h-screen sticky top-0">
+    <div class="border-b-1 border-muave p-4">
+        <h1 class="text-lg font-bold hover:text-muave transition-all duration-200">
+            <a href="https://romanposchl.github.io/">
+                Roman Pöschl Blog
+            </a>
+        </h1>
+    </div>
+    
+  <nav class="flex flex-col p-2">
+    <ul class="flex w-full min-w-0 flex-col gap-1">
+    <li class="relative">
+      <a
+        class="
+        
+        
+        flex w-full items-center gap-2 overflow-hidden rounded-md p-2 text-left outline-none cursor-pointer rounded-md hover:bg-base hover:text-muave" href="/">Home</a>
+    </li>
+    <li class="relative">
+      <a
+        class="
+        
+        
+        flex w-full items-center gap-2 overflow-hidden rounded-md p-2 text-left outline-none cursor-pointer rounded-md hover:bg-base hover:text-muave" href="/pages/about-me/">About Me</a>
+    </li>
+    <li class="relative">
+      <a
+        class="
+        
+        
+        flex w-full items-center gap-2 overflow-hidden rounded-md p-2 text-left outline-none cursor-pointer rounded-md hover:bg-base hover:text-muave" aria-current="true" class="ancestor">Projects</a>
+        <ul>
+    <li class="relative">
+      <a
+        class="
+        
+        bg-base text-muave
+        
+        flex w-full items-center gap-2 overflow-hidden rounded-md p-2 text-left outline-none cursor-pointer rounded-md hover:bg-base hover:text-muave" aria-current="page" class="active" href="/posts/2025-07-10-creating-personal-blog-with-hugo-and-github-pages-part-1/">Creating a Personal Blog with Hugo and GitHub Pages: Part 1</a>
+    </li>
+        </ul>
+    </li>
+    </ul>
+  </nav>
+    
+</aside>
+        <main class="flex-grow">
+            <div class="bg-mantle sticky border-b-1 border-muave p-4 top-0">
+    <div class="container max-w-4xl mx-auto ">
+        <h1>Roman Pöschl Blog</h1>
+    </div>
+</div>
+            <div class="container max-w-4xl mx-auto py-12 px-4 md:px-6 fade-in">
+              
+    <article class="prose lg:prose-xl max-w-none">
+        
+        
+
+        <h1 class="text-4xl font-bold mb-2">Creating a Personal Blog with Hugo and GitHub Pages: Part 1</h1>
+
+        <div class="text-sm text-gray-500 mb-8">
+            <time datetime="2025-07-12">July 12, 2025</time>
+        </div>
+
+        <p>Recently, I started writing again, so I decided to look into creating a simple personal blog. While doing research, I found Hugo, a static site generator. It works simply: it takes a theme and your content (which consists of simple Markdown files) and generates static HTML pages for every post. A generated site like this, you can publish to various (mostly free) hostings. I decided I will try GitHub Pages first.</p>
+<p>In this learning/tutorial series, we will try to create a static HTML generated blog with hosting on GitHub Pages.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h2 id="preparations" class="text-muave border-b-1 mt-8 mb-4 pb-2 text-3xl font-bold border-surface0">Preparations</h2><p>To start, we only need a few things. First, Hugo, which you can download and install from their official website <a class="font-bold text-lavender" href="https://gohugo.io/">https://gohugo.io/</a>, then the <code>hugo</code> command should be awailable in your terminal.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h2 id="creating-site" class="text-muave border-b-1 mt-8 mb-4 pb-2 text-3xl font-bold border-surface0">Creating site</h2><p>To start your blog, we will use the terminal and Hugo CLI. In terminal, use the <code>cd</code> command to get to the directory where you want to have your blog and use the command <code>hugo new site &lt;NAME_OF_YOUR_BLOG&gt;</code>. Hugo will create the base structure of your site. Then you can cd into the newly created directory or open it in your favorite editor like Neovim or VS Code.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h2 id="basic-structure" class="text-muave border-b-1 mt-8 mb-4 pb-2 text-3xl font-bold border-surface0">Basic structure</h2><p>Now that you have your project created, we can look into the structure of your site.</p>
+<pre tabindex="0"><code>.
+├── archetypes/
+│   └── default.md
+├── assets/
+├── content/
+├── data/
+├── i18n/
+├── layouts/
+├── static/
+├── themes/
+└── hugo.toml
+</code></pre><p>Right from the start, I want to change the configuration format from TOML to YAML by renaming hugo.toml to hugo.yaml. Hugo can have configuration in formats YAML, TOML and JSON. I personally like YAML, so I will convert TOML to YAML. For a simple configuration, you can then change the file extension and use your editor&rsquo;s &ldquo;find and replace&rdquo; feature to convert the <code>=</code> assignment characters to <code>:</code> and remove any surrounding quotes (like <code>'</code>).</p>
+<p>Inside the hugo.yaml file, we will expand various parts of the configuration of our site. For now, we can skip it. With the terminal inside our root directory, we can run the command <code>hugo server -D</code>. After Hugo builds your site, you will see a message in the terminal that you can access it on the URL <code>http://localhost:1313/</code> or some other port. If you navigate it, you will see just <code>Page not found</code>. But we confirmed that the page can be built, so we can continue.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h2 id="installing-theme" class="text-muave border-b-1 mt-8 mb-4 pb-2 text-3xl font-bold border-surface0">Installing theme</h2><p>Hugo has on their website <a class="font-bold text-lavender" href="https://themes.gohugo.io/">here</a> a list of some community themes. Many of them have a manual for installation and configuration, so I will not go too much into details here. But basically, you clone/copy/download the theme into the <strong>themes</strong> folder and set the <code>theme</code> property to the name of the theme.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h2 id="creating-content" class="text-muave border-b-1 mt-8 mb-4 pb-2 text-3xl font-bold border-surface0">Creating content</h2><p>So Hugo CLI also has commands to create new pages. Basically, everything on your site is a page. The command <code>hugo new content &lt;PATH&gt;</code> will create a new markdown file, but you can also do it manually. Like that, you can create new pages and posts. For example, the command <code>hugo new content posts/post1.md</code> will create a new file <code>post1.md</code> inside the directory <code>content/posts</code>. If you open the file, you will see that there is something on top. It is called <em>Front matter</em>, basically metadata of the page.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h3 id="front-matter" class="text-muave mt-6 mb-2 text-2xl font-bold">Front matter</h3><p>How to work with the Front matter? Well, it is just the configuration of the page. The surrounding characters (&mdash;, +++) indicate the format of the front matter: <code>+++</code> for TOML, <code>---</code> for YAML and <code>{</code> for JSON.</p>
+<p>There are many properties of the page that you can specify here. For example, this is the current Front matter of this post:</p>
+<pre tabindex="0"><code>---
+date: 2025-07-10T19:32:41.584Z
+draft: false
+title: &#34;Creating a Personal Blog with Hugo and GitHub Pages: Part 1&#34;
+keywords:
+    - Hugo
+    - Github pages
+tags:
+    - Hugo
+    - Github pages
+categories: Blog development
+---
+</code></pre><p>As you can see, because I used <code>:</code> in the title, I needed to wrap it in <code>&quot;</code> as a string. Also, some properties depend on the theme you chose, so it is good to check the theme documentation.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h2 id="final" class="text-muave border-b-1 mt-8 mb-4 pb-2 text-3xl font-bold border-surface0">Final</h2><p>In this article, we&rsquo;ve covered the basics of the Hugo static site generator. In the next parts, we will start creating our own custom theme.</p>
+<p>Follow along on this journey to see what we build together. What will you write about in your blog? Let me know in the comments!</p>
+<blockquote>
+<p>The text is not generated by AI but written by me and corrected by Google Gemini Writing editor Gem and Grammarly.</p></blockquote>
+
+
+        <div class="mt-8 pt-4 border-t border-gray-200">
+            <h4 class="font-bold mb-2">Tagged In:</h4>
+            <div>
+                
+                    <a href="/tags/hugo" class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2 hover:bg-gray-300">#Hugo</a>
+                
+                    <a href="/tags/github-pages" class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2 hover:bg-gray-300">#GitHub Pages</a>
+                
+            </div>
+        </div>
+    </article>
+
+            </div>
+        </main>
+    </div>
+</body>
+</html>

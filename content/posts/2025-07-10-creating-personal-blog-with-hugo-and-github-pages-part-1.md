@@ -1,28 +1,33 @@
 ---
-date: 2025-07-10T19:32:41.584Z
-draft: true
+date: 2025-07-12T21:19:04.070Z
+draft: false
 title: "Creating a Personal Blog with Hugo and GitHub Pages: Part 1"
-keywords:
+keywords: 
     - Hugo
-    - Github pages
+    - GitHub Pages
 tags:
     - Hugo
-    - Github pages
-categories: Blog development
+    - GitHub Pages
+categories:
+    - Blog development
+menus:
+    main:
+        parent: Projects
+        weight: 10
 ---
 
-Recently, I started writing again, so I decided to look into creating a simple personal blog. While doing research I found Hugo, static site generator. It works simply: it takes a theme and your content (which consists of simple Markdown files) and generates static HTML pages for every post. Generated site like this you can publish to various (mostly free) hostings. I decided I will try Github pages first.
+Recently, I started writing again, so I decided to look into creating a simple personal blog. While doing research, I found Hugo, a static site generator. It works simply: it takes a theme and your content (which consists of simple Markdown files) and generates static HTML pages for every post. A generated site like this, you can publish to various (mostly free) hostings. I decided I will try GitHub Pages first.
 
-In this learning/tutorial series we will try to create static HTML generated blog with hosting on Github Pages.
+In this learning/tutorial series, we will try to create a static HTML generated blog with hosting on GitHub Pages.
 
 ## Preparations
-To start, we only need a few things. First, Hugo, which you can download and install from their official website https://gohugo.io/ then you should have in your terminal command `hugo`. If you wanna go the easy way, you can then select [here](https://themes.gohugo.io/) some of community themes for your page, install it following its documentation and start writing. But if you know me, you know I won't go the easy way. Instead, I want to create my own theme. (In future I will also make tutorial, about the creating posts and pages with Hugo and something that will help with managing your blog)
+To start, we only need a few things. First, Hugo, which you can download and install from their official website https://gohugo.io/, then the `hugo` command should be awailable in your terminal. 
 
 ## Creating site
-To start your blog we will use terminal and Hugo CLI. In terminal use `cd` command to get to directory where you wanna have your blog and use command `hugo new site <NAME_OF_YOUR_BLOG>`. Hugo will create base structure of your site. Then you can cd into newly created directory or open it in your favorite editor like neovim or vscode.
+To start your blog, we will use the terminal and Hugo CLI. In terminal, use the `cd` command to get to the directory where you want to have your blog and use the command `hugo new site <NAME_OF_YOUR_BLOG>`. Hugo will create the base structure of your site. Then you can cd into the newly created directory or open it in your favorite editor like Neovim or VS Code.
 
 ## Basic structure
-Now that you have your project created we can look into structure of your site.
+Now that you have your project created, we can look into the structure of your site.
 
 ```
 .
@@ -38,20 +43,20 @@ Now that you have your project created we can look into structure of your site.
 └── hugo.toml
 ```
 
-Right from the start, I want to change the configuration format from TOML to YAML by renaming hugo.toml to hugo.yaml. Hugo can have configuration in formats YAML, TOML and JSON. I personaly like yaml so I will convert TOML to YAML. For a simple configuration, you can then change the file extension and use your editor's "find and replace" feature to convert the `=` assignment characters to `:` and remove any surrounding quotes (like `'`).
+Right from the start, I want to change the configuration format from TOML to YAML by renaming hugo.toml to hugo.yaml. Hugo can have configuration in formats YAML, TOML and JSON. I personally like YAML, so I will convert TOML to YAML. For a simple configuration, you can then change the file extension and use your editor's "find and replace" feature to convert the `=` assignment characters to `:` and remove any surrounding quotes (like `'`).
 
-Inside hugo.yaml file we will expand various parts of configuration of our site. For now we can skip it. With terminal inside our root directory we can run command `hugo server -D` after hugo builds your site you will see message in terminal that you can access it on url `http://localhost:1313/` or some other port. If you navigate it you will see just `Page not found`. But we confirmed that page can be built, so we can continue.
+Inside the hugo.yaml file, we will expand various parts of the configuration of our site. For now, we can skip it. With the terminal inside our root directory, we can run the command `hugo server -D`. After Hugo builds your site, you will see a message in the terminal that you can access it on the URL `http://localhost:1313/` or some other port. If you navigate it, you will see just `Page not found`. But we confirmed that the page can be built, so we can continue.
 
 ## Installing theme
-Hugo has on their website [here](https://themes.gohugo.io/) list of some community themes. Many of them has manual for installation and configuration so I will not go too much into details here. But basically you clone/copy/download theme into themes folder and setting `theme` property to a name of the theme.
+Hugo has on their website [here](https://themes.gohugo.io/) a list of some community themes. Many of them have a manual for installation and configuration, so I will not go too much into details here. But basically, you clone/copy/download the theme into the **themes** folder and set the `theme` property to the name of the theme.
 
 ## Creating content
-So Hugo CLI has also commands to create new pages. Basically, everything on your site is a page. The command `hugo new content <PATH>` will create new markdown file, but you can also do it manually. Like that you can create new pages and posts. For example command `hugo new content posts/post1.md` will create new file `post1.md` inside directory `content/posts`. If you open the file you will see there is something on the top. It is called *Front matter*, basically metadata of page.
+So Hugo CLI also has commands to create new pages. Basically, everything on your site is a page. The command `hugo new content <PATH>` will create a new markdown file, but you can also do it manually. Like that, you can create new pages and posts. For example, the command `hugo new content posts/post1.md` will create a new file `post1.md` inside the directory `content/posts`. If you open the file, you will see that there is something on top. It is called *Front matter*, basically metadata of the page.
 
 ### Front matter
-How to work with Front matter? Well it is just config of page. The surrounding characters (---, +++) indicate the format of the front matter: `+++` for TOML, `---` for YAML and `{` for JSON.
+How to work with the Front matter? Well, it is just the configuration of the page. The surrounding characters (---, +++) indicate the format of the front matter: `+++` for TOML, `---` for YAML and `{` for JSON.
 
-There are many properties of page that you can specify here. For example this is current Front matter of this post:
+There are many properties of the page that you can specify here. For example, this is the current Front matter of this post:
 ```
 ---
 date: 2025-07-10T19:32:41.584Z
@@ -66,11 +71,11 @@ tags:
 categories: Blog development
 ---
 ```
-As you can see, because i used `:` in title, I needed to wrap it in `"` as a string. Also some properties depends on theme you chose so it is good to check theme documentation.
+As you can see, because I used `:` in the title, I needed to wrap it in `"` as a string. Also, some properties depend on the theme you chose, so it is good to check the theme documentation.
 
 ## Final
-In this article, we've covered the basics of the Hugo static site generator. In the next parts we will start creating our own custom theme. 
+In this article, we've covered the basics of the Hugo static site generator. In the next parts, we will start creating our own custom theme. 
 
-Follow along on this journey to see what we build together. What you will write about in your blog? Let me know in the comments!
+Follow along on this journey to see what we build together. What will you write about in your blog? Let me know in the comments!
 
 > The text is not generated by AI but written by me and corrected by Google Gemini Writing editor Gem and Grammarly.

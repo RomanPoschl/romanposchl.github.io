@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Hugo on Roman Pöschl Blog</title>
-    <link>https://romanposchl.github.io/tags/hugo/</link>
-    <description>Recent content in Hugo on Roman Pöschl Blog</description>
+    <title>Blog Development on Roman Pöschl Blog</title>
+    <link>https://romanposchl.github.io/categories/blog-development/</link>
+    <description>Recent content in Blog Development on Roman Pöschl Blog</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 12 Jul 2025 21:19:04 +0000</lastBuildDate>
-    <atom:link href="https://romanposchl.github.io/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://romanposchl.github.io/categories/blog-development/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Creating a Personal Blog with Hugo and GitHub Pages: Part 1</title>
       <link>https://romanposchl.github.io/posts/2025-07-10-creating-personal-blog-with-hugo-and-github-pages-part-1/</link>

@@ -1,12 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on My New Hugo Site</title>
+    <title>Posts on Roman Pöschl Blog</title>
     <link>https://romanposchl.github.io/posts/</link>
-    <description>Recent content in Posts on My New Hugo Site</description>
+    <description>Recent content in Posts on Roman Pöschl Blog</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate></lastBuildDate>
+    <lastBuildDate>Sat, 12 Jul 2025 21:19:04 +0000</lastBuildDate>
     <atom:link href="https://romanposchl.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Creating a Personal Blog with Hugo and GitHub Pages: Part 1</title>
+      <link>https://romanposchl.github.io/posts/2025-07-10-creating-personal-blog-with-hugo-and-github-pages-part-1/</link>
+      <pubDate>Sat, 12 Jul 2025 21:19:04 +0000</pubDate>
+      <guid>https://romanposchl.github.io/posts/2025-07-10-creating-personal-blog-with-hugo-and-github-pages-part-1/</guid>
+      <description>&lt;p&gt;Recently, I started writing again, so I decided to look into creating a simple personal blog. While doing research, I found Hugo, a static site generator. It works simply: it takes a theme and your content (which consists of simple Markdown files) and generates static HTML pages for every post. A generated site like this, you can publish to various (mostly free) hostings. I decided I will try GitHub Pages first.&lt;/p&gt;</description>
+    </item>
   </channel>
 </rss>

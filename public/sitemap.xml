@@ -2,8 +2,26 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://romanposchl.github.io/categories/blog-development/</loc>
+    <lastmod>2025-07-12T21:19:04+00:00</lastmod>
+  </url><url>
+    <loc>https://romanposchl.github.io/categories/</loc>
+    <lastmod>2025-07-12T21:19:04+00:00</lastmod>
+  </url><url>
+    <loc>https://romanposchl.github.io/posts/2025-07-10-creating-personal-blog-with-hugo-and-github-pages-part-1/</loc>
+    <lastmod>2025-07-12T21:19:04+00:00</lastmod>
+  </url><url>
+    <loc>https://romanposchl.github.io/tags/github-pages/</loc>
+    <lastmod>2025-07-12T21:19:04+00:00</lastmod>
+  </url><url>
+    <loc>https://romanposchl.github.io/tags/hugo/</loc>
+    <lastmod>2025-07-12T21:19:04+00:00</lastmod>
+  </url><url>
     <loc>https://romanposchl.github.io/posts/</loc>
-    <lastmod>2025-07-10T19:32:41+00:00</lastmod>
+    <lastmod>2025-07-12T21:19:04+00:00</lastmod>
+  </url><url>
+    <loc>https://romanposchl.github.io/tags/</loc>
+    <lastmod>2025-07-12T21:19:04+00:00</lastmod>
   </url><url>
     <loc>https://romanposchl.github.io/pages/about-me/</loc>
     <lastmod>2025-07-02T20:04:30+02:00</lastmod>
@@ -13,9 +31,5 @@
   </url><url>
     <loc>https://romanposchl.github.io/pages/</loc>
     <lastmod>2025-07-02T20:04:30+02:00</lastmod>
-  </url><url>
-    <loc>https://romanposchl.github.io/categories/</loc>
-  </url><url>
-    <loc>https://romanposchl.github.io/tags/</loc>
   </url>
 </urlset>
