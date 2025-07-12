@@ -2,42 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://example.org/tags/hugo/</loc>
-    <lastmod>2025-07-04T19:55:00+00:00</lastmod>
+    <loc>https://romanposchl.github.io/posts/</loc>
+    <lastmod>2025-07-10T19:32:41+00:00</lastmod>
   </url><url>
-    <loc>https://example.org/posts/post-test4/</loc>
-    <lastmod>2025-07-04T19:55:00+00:00</lastmod>
-  </url><url>
-    <loc>https://example.org/posts/</loc>
-    <lastmod>2025-07-04T19:55:00+00:00</lastmod>
-  </url><url>
-    <loc>https://example.org/tags/</loc>
-    <lastmod>2025-07-04T19:55:00+00:00</lastmod>
-  </url><url>
-    <loc>https://example.org/tags/tailwind/</loc>
-    <lastmod>2025-07-04T19:55:00+00:00</lastmod>
-  </url><url>
-    <loc>https://example.org/tags/tech/</loc>
-    <lastmod>2025-07-04T19:55:00+00:00</lastmod>
-  </url><url>
-    <loc>https://example.org/posts/post-test3/</loc>
-    <lastmod>2025-07-02T22:44:40+02:00</lastmod>
-  </url><url>
-    <loc>https://example.org/posts/post-test2/</loc>
-    <lastmod>2025-07-02T22:44:37+02:00</lastmod>
-  </url><url>
-    <loc>https://example.org/posts/post-test1/</loc>
-    <lastmod>2025-07-02T22:44:33+02:00</lastmod>
-  </url><url>
-    <loc>https://example.org/pages/about-me/</loc>
+    <loc>https://romanposchl.github.io/pages/about-me/</loc>
     <lastmod>2025-07-02T20:04:30+02:00</lastmod>
   </url><url>
-    <loc>https://example.org/</loc>
+    <loc>https://romanposchl.github.io/</loc>
     <lastmod>2025-07-02T20:04:30+02:00</lastmod>
   </url><url>
-    <loc>https://example.org/pages/</loc>
+    <loc>https://romanposchl.github.io/pages/</loc>
     <lastmod>2025-07-02T20:04:30+02:00</lastmod>
   </url><url>
-    <loc>https://example.org/categories/</loc>
+    <loc>https://romanposchl.github.io/categories/</loc>
+  </url><url>
+    <loc>https://romanposchl.github.io/tags/</loc>
   </url>
 </urlset>

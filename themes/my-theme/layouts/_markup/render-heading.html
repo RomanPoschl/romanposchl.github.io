@@ -1,0 +1,25 @@
+{{ $classes := "" }}
+
+{{ if eq .Level 1 }}
+{{ $classes = "mt-0 border-b-1"}}
+{{ end }}
+
+{{ if eq .Level 2 }}
+{{ $classes = "text-muave border-b-1 mt-8 mb-4 pb-2 text-3xl font-bold border-surface0"}}
+{{ end }}
+
+{{ if eq .Level 3 }}
+{{ $classes = "text-muave mt-6 mb-2 text-2xl font-bold"}}
+{{ end }}
+
+{{ if eq .Level 4 }}
+{{ $classes = "text-muave mt-6 mb-2 text-xl font-bold"}}
+{{ end }}
+
+{{ if eq .Level 5 }}
+{{ $classes = "text-muave mt-6 mb-2 text-lg font-bold"}}
+{{ end }}
+
+<h{{ .Level }} id="{{ .Anchor }}" class="{{ $classes }}" {{- with .Attributes.class }} class="{{ . }}" {{- end }}>
+  {{- .Text -}}
+</h{{ .Level }}>
